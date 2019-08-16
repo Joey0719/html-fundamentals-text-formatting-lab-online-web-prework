@@ -21,7 +21,7 @@ RSpec.describe 'index.html' do
 
   it 'contains two sets of opening and closing <p> tags' do
     p = parsed_html.search('p')['1']
-    expect(p).to_not be_nil, "No <p> tag was found"
+    expect(p1).to_not be_nil, "No <p> tag was found"
     expect(html_file_contents).to include('</p>'), "Don't forget to include a closing </p>"
 
     p2 = parsed_html.search('p')['2']
